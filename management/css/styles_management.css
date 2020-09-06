@@ -1,0 +1,278 @@
+body {
+  color: green;
+	font-family: 'Caveat', cursive;
+	background-color: rgba(241, 234, 211, 0.973);
+	
+}
+
+p {
+  color: blue;
+  font-family: 'Caveat', cursive;
+}
+
+header {
+	background-image: url("../relax_haikei.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+  /* background-color:#CCFF00; */
+}
+
+body {
+	/* background-color: #99FF66; */
+	margin: 0;
+}
+
+.icon img {
+		border-radius: 50%;
+		width: 180px;
+		height: 180px;
+		border-style: solid;
+		border-color: black;
+		border-width: 8px;
+}
+
+
+
+
+
+
+h2 {
+  color:yellow;
+}
+
+.management > h1 {
+	color: rgb(28, 78, 41);
+	text-align: center;
+}
+
+.management > p {
+	color: black;
+	font-weight: bolder;
+	text-align: center;
+}
+
+.works > h1 {
+  font-weight:normal;
+  font-family: 'Caveat', cursive;
+font-size: 24px;
+text-align: center;
+margin-top: 60px;
+margin-bottom: 60px;
+color:black;
+}
+
+.works > p {
+font-weight: normal;
+font-family: 'Caveat', cursive;
+font-size: 24px;
+text-align: center;
+margin-top: 60px;
+margin-bottom: 60px;
+color:black;
+
+}
+
+.sample01 {
+
+margin : 0 auto 40px;
+width : 100%;
+font-size : 28px;
+text-align : center;
+overflow : hidden;
+}
+
+.sample01 p{
+margin:0;
+display : inline-block;
+padding-left: 100%;
+white-space : nowrap;
+line-height : 1em;
+animation : scrollSample01 20s linear infinite;
+}
+
+@keyframes scrollSample01{
+0% { transform: translateX(0)}
+100% { transform: translateX(-100%)}
+
+}
+
+
+
+
+.cp_cssslider {
+	width: 300px;
+	height: 200px;
+	overflow: hidden;
+	margin: 2em auto;
+	border: 10px solid #ffffff;
+	box-shadow:0px 0px 5px 0px rgba(0,0,0,0.5);
+}
+.cp_slide_item {
+	width: 300px;
+	height: 200px;
+	float: left;
+	position: relative;
+}
+.cp_slidewrapper {
+	width: 500%;/* slideの枚数×100% */
+	position: relative;
+	left: 0;
+	animation: slider 20s infinite ease;/* スピード */
+}
+@-webkit-keyframes slider {
+	/* 100%を枚数で割った%に割り振る */
+	0% {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	}
+	20% {
+	-webkit-transform: translateX(-300px);
+	transform: translateX(-300px);
+	}
+	40% {
+	-webkit-transform: translateX(-600px);
+	transform: translateX(-600px);
+	}
+	60% {
+	-webkit-transform: translateX(-900px);
+	transform: translateX(-900px);
+	}
+	80% {
+	-webkit-transform: translateX(-1200px);
+	transform: translateX(-1200px);
+	}
+	100% {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	}
+}
+@keyframes slider {
+	/* 100%を枚数で割った%に割り振る */
+	0% {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	}
+	20% {
+	-webkit-transform: translateX(-300px);
+	transform: translateX(-300px);
+	}
+	40% {
+	-webkit-transform: translateX(-600px);
+	transform: translateX(-600px);
+	}
+	60% {
+	-webkit-transform: translateX(-900px);
+	transform: translateX(-900px);
+	}
+	80% {
+	-webkit-transform: translateX(-1200px);
+	transform: translateX(-1200px);
+	}
+	100% {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	}
+}
+
+.sample01 img{
+  border-radius: 20px;
+}
+
+
+
+
+
+
+
+.box {
+  position   : relative;
+  max-width  : 400px;
+  height     : 250px;
+  margin     : auto;
+  overflow   : hidden;
+}
+
+.box .bgImg {
+  position   : absolute;
+  top        : 0;
+  left       : 0;
+  bottom     : 0;
+  right      : 0;
+  opacity    : 0;
+  animation  : bgAnime 20s infinite;   /* 4画像 × 各5s = 20s */
+}
+
+.box .src1 {
+  background-image : url(../haikei.jpg);   /* 背景の画像を指定 */
+}
+.box .src2 {
+  background-image : url(../massage.jpg);   /* 背景の画像を指定 */
+  animation-delay  : 5s;
+}
+.box .src3 {
+  background-image : url(../cat.jpg);   /* 背景の画像を指定 */
+  animation-delay  : 10s; 
+}
+.box .src4 {
+  background-image : url(../oil.jpg);   /* 背景の画像を指定 */
+  animation-delay  : 15s;
+}
+
+
+@keyframes bgAnime {
+	0% { opacity: 0; }
+	5% { opacity: 1; }
+ 25% { opacity: 1; }
+ 30% { opacity: 0; }
+100% { opacity: 0; }
+}
+
+
+
+
+
+ .button {
+  display      : inline-block;
+  border-radius: 50%;                  
+  box-shadow   : 6px 6px 3px #666666;  
+  cursor       : pointer;              
+	transition   : .3s;                  
+
+}
+.button:hover {
+  box-shadow   : none;                 
+  border-radius: 0;                    
+} 
+
+
+.icon {
+	text-align: center;
+}
+
+
+
+
+
+/* .btn_a {
+	width: 70px;
+	height: 70px;
+	background: #FFF;
+	border: 1px solid #2a82a3;
+	border-radius: 70px;
+	-moz-border-radius: 70px;
+	-webkit-border-radius: 70px;
+	color: #2a82a3;
+	padding: 42px 20px 20px;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	font-size: 120%;
+	transition: background-color 0.5s ease-in;
+	-webkit-transition: background-color 0.5s ease-in;
+}
+.btn_a:hover {
+	background: #2a82a3;
+	color: #FFF;
+	border: 1px solid #FFF;
+} */
+
